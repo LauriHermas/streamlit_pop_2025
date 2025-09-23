@@ -5,7 +5,7 @@
 # b) Use streamlit and create an interactive web graph where you can select the countries to be included in the population plot
 #first read data
 import pandas as pd
-df_visu = pd.read_csv('population_country_columns.csv')
+df_visu = pd.read_csv(https://raw.githubusercontent.com/LauriHermas/streamlit_pop_2025/refs/heads/main/population_country_columns.csv)
 
 import streamlit as st
 
@@ -34,4 +34,5 @@ plt.xlabel('Year')
 plt.legend()
 plt.grid()
 st.pyplot(fig)
+
 
