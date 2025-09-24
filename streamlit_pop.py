@@ -8,9 +8,9 @@ import pandas as pd
 df_visu = pd.read_csv('https://raw.githubusercontent.com/LauriHermas/streamlit_pop_2025/refs/heads/main/population_country_columns.csv')
 
 import streamlit as st
-
+st.title('Population plot')
 #select teh columns we wish to plot
-columns = st.multiselect('Countries', (df_visu.drop(columns = ['year'])), key = 'line_selector')
+columns = st.multiselect('Countries', (df_visu.drop(columns = ['year'])).columns, key = 'line_selector')
 
 
 #plot the line chart
@@ -34,6 +34,7 @@ plt.xlabel('Year')
 plt.legend()
 plt.grid()
 st.pyplot(fig)
+
 
 
 
